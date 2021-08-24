@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "name": "Nike Slim Shirt",
+    "image": "../css/images/shoe1.png",
+    "price": 1500
+  },
+  {
+    "id": 2,
+    "name": "Adidas Slim Shirt",
+    "image": "../css/images/shoes2.png",
+    "price": 1499
+  },
+  {
+    "id": 3,
+    "name": "Lacoste Slim Shirt",
+    "image": "../css/images/shoes3.png",
+    "price": 999
+  },
+  {
+    "id": 4,
+    "name": "Puma Fit Pant",
+    "image": "../css/images/shoes4.png",
+    "price": 499
+  },
+  {
+    "id": 5,
+    "name": "Peter Fit Pant",
+    "image": "../css/images/shirt1.png",
+    "price": 699
+  },
+  {
+    "id": 6,
+    "name": "Allen Fit Pant",
+    "image": "../css/images/shirt2.png",
+    "price": 1199
+  },
+  {
+    "id": 7,
+    "name": "Monster Fit Pant",
+    "image": "../css/images/shirt3.png",
+    "price": 1599
+  },
+  {
+    "id": 8,
+    "name": "Arrow Fit Pant",
+    "image": "../css/images/shirt4.png",
+    "price": 1999
+  },
+  {
+    "id": 9,
+    "name": "Bata Fit Pant",
+    "image": "../css/images/specs1.png",
+    "price": 2499
+  },
+  {
+    "id": 10,
+    "name": "Woodland Fit Pant",
+    "image": "../css/images/specs2.png",
+    "price": 3199
+  },
+  {
+    "id": 11,
+    "name": "Paragon Fit Pant",
+    "image": "../css/images/specs3.png",
+    "price": 2299
+  },
+  {
+    "id": 12,
+    "name": "Adidas Fit Pant",
+    "image": "../css/images/specs4.png",
+    "price": 1995
+  },
+  {
+    "id": 13,
+    "name": "Amazons Fit Pant",
+    "image": "../css/images/cap3.png",
+    "price": 399
+  }
+]

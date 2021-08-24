@@ -1,0 +1,63 @@
+<%- include('partials/header') %>
+
+<!------------------------ CAROUSEL STARTS FROM HERE ----------->
+<%- include('partials/shopping-crousel') %>
+
+<!-- ------------------------- card starts here pricing ----------------------------------- -->
+<hr>
+<h1 class="cardheading">Trending Items</h1>
+<hr />
+<!-- Tab Nav -->
+<div class="container-fluid mytab d-flex justify-content-center">
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#man" role="tab"
+        >Sport Shoe</a
+      >
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#women" role="tab">Shirt</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#kids" role="tab"
+        >Sunglasses</a
+      >
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#accessories" role="tab"
+        >Men</a
+      >
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#essential" role="tab"
+        >Women</a
+      >
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#prices" role="tab">Prices</a>
+    </li>
+  </ul>
+</div>
+<!--/ End Tab Nav -->
+
+<div class="row row-cols-1 row-cols-md-3 g-3 card-pricing">
+  <% products.forEach(data => { %>
+  <div class="col-3">
+    <div class="card hcard hcard-1 shadow w-75">
+      <a href="/overview/<%= data.id %> ">
+        <img src="<%= data.image %>" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <hr />
+          <h5 class="card-title"><%= data.name %></h5>
+        <p class="price">&#8360;<%= data.price %>/-</p>
+        </a>
+        <p>⭐⭐⭐⭐⭐</p>
+      </div>
+    </div>
+  </div>
+  <% }); %>
+</div>
+
+<!-- ------------------------- card pricing ends here----------------------------------- -->
+
+<%- include('partials/footer') %>

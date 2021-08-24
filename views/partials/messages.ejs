@@ -1,0 +1,54 @@
+<% if(typeof errors != 'undefined') { %> <% errors.forEach(function(error) { %>
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <strong><%= error.msg %></strong>
+  <button
+    type="button"
+    class="btn-close"
+    data-bs-dismiss="alert"
+    aria-label="Close"
+  ></button>
+</div>
+<% }); %> <% } %> <% if(success_msg != '') { %>
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+  <strong><%= success_msg %></strong>
+  <button
+    type="button"
+    class="btn-close"
+    data-bs-dismiss="alert"
+    aria-label="Close"
+  ></button>
+</div>
+<% } %> <% if(error_msg != '') { %>
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <strong><%= error_msg %></strong>
+  <button
+    type="button"
+    class="btn-close"
+    data-bs-dismiss="alert"
+    aria-label="Close"
+  ></button>
+</div>
+<% } %> <% if(error != '') { %>
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <strong><%= error %></strong>
+  <button
+    type="button"
+    class="btn-close"
+    data-bs-dismiss="alert"
+    aria-label="Close"
+  ></button>
+</div>
+<% } %>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    window.setTimeout(function () {
+      $(".alert")
+        .fadeTo(1000, 0)
+        .slideUp(1000, function () {
+          $(this).remove();
+        });
+    }, 2000);
+  });
+</script>

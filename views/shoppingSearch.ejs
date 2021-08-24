@@ -1,0 +1,26 @@
+<%- include('partials/header') %>
+
+<!------------------------ CAROUSEL STARTS FROM HERE ----------->
+<%- include('partials/shopping-crousel') %>
+
+<div class="row row-cols-1 row-cols-md-3 g-3 card-pricing">
+  <% variable.forEach(data => { %>
+  <div class="col-3">
+    <div class="card shadow w-75">
+      <a href="/overview/<%= data.id %> ">
+        <img src="<%= data.image %>" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <hr />
+          <h5 class="card-title"><%= data.name %></h5>
+        <p class="price">&#8360;<%= data.price %>/-</p>
+        </a>
+        <p>⭐⭐⭐⭐⭐</p>
+      </div>
+    </div>
+  </div>
+  <% }); %>
+</div>
+
+<!-- ------------------------- card pricing ends here----------------------------------- -->
+
+<%- include('partials/footer') %>

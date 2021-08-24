@@ -1,0 +1,19 @@
+<%- include('partials/header') %>
+
+<section class="section">
+    <div class="container-fluid bgpurple">
+        <h3><i class="fa fa-lock fa-4x"></i></h3>
+        <h2 class="text-center">Forgot Password?</h2>
+        <p>You can reset your password here.</p>
+        <form id="form" role="form" autocomplete="off" class="formbg" action="/" >
+            <input id="email" name="email" placeholder="email address" class="form-control" type="email" required>
+            <input name="reset" class="btn btn-primary rounded sbtn myButton" value="Reset Password" type="submit">
+            <input type="hidden" class="hide" name="token" id="token" value="">
+        </form>
+    </div>
+</section>
+
+
+
+
+<%- include('partials/footer') %>

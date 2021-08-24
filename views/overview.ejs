@@ -1,0 +1,170 @@
+<%- include('partials/header') %>
+
+
+<div>
+  <h1 class="product-head">Product Overview</h1>
+</div>
+<hr>
+
+<div class="row w-100 ">
+  <% if(variable != null) { %>
+  <div class="col-md-6">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card  shadow-lg p-3 mb-5 bg-body rounded w-50 prodmain">
+          <img class="img-fluid rounded" src=" <%= variable.image %> " alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="row thumbmain">
+      <div class="col-md-3">
+        <div class="card hcard shadow-lg p-3 mb-5 bg-body rounded">
+          <img class="img-fluid rounded" src=" <%= variable.image %>" alt="" />
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card hcard shadow-lg p-3 mb-5 bg-body rounded">
+          <img class="img-fluid rounded" src=" <%= variable.image %>" alt="" />
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card hcard shadow-lg p-3 mb-5 bg-body rounded">
+          <img class="img-fluid rounded" src=" <%= variable.image %>" alt="" />
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card hcard shadow-lg p-3 mb-5 bg-body rounded">
+          <img class="img-fluid rounded" src=" <%= variable.image %>" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 detailpage">
+    <h5><%= variable.name %></h5>
+    <p class="mb-2 text-uppercase small">Shirts</p>
+    <p>⭐⭐⭐⭐⭐</p>
+    <p>
+      <span class="mr-1"><strong>&#8377;<%= variable.price %> /-</strong></span>
+    </p>
+    <p class="pt-1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, sapiente
+      illo. error voluptas repellat rerum quidem, soluta enim perferendis
+      voluptates laboriosam. Distinctio,
+    </p>
+    <div class="table-responsive">
+      <table class="table table-sm table-borderless mb-0">
+        <tbody>
+          <tr>
+            <th class="pl-0 w-25" scope="row"><strong>Model</strong></th>
+            <td>Shirt 5407X</td>
+          </tr>
+          <tr>
+            <th class="pl-0 w-25" scope="row"><strong>Color</strong></th>
+            <td>Black</td>
+          </tr>
+          <tr>
+            <th class="pl-0 w-25" scope="row"><strong>Delivery</strong></th>
+            <td>USA, Europe</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <hr />
+    <div class="table-responsive mb-2">
+      <table class="table table-sm table-borderless">
+        <tbody>
+          <tr>
+            <td class="pl-0 pb-0 w-25">Quantity</td>
+            <td class="pb-0">Select size</td>
+          </tr>
+          <tr>
+            <td class="pl-0">
+              <div class="def-number-input number-input safari_only mb-0">
+                <input
+                  class="quantity w-50"
+                  min="0"
+                  name="quantity"
+                  value="1"
+                  type="number"
+                />
+              </div>
+            </td>
+            <td>
+              <div class="mt-1">
+                <div class="form-check form-check-inline pl-0">
+                  <input
+                    type="radio"
+                    class="form-check-input"
+                    id="small"
+                    name="materialExampleRadios"
+                    checked
+                  />
+                  <label
+                    class="
+                      form-check-label
+                      small
+                      text-uppercase
+                      card-link-secondary
+                    "
+                    for="small"
+                    >Small</label
+                  >
+                </div>
+                <div class="form-check form-check-inline pl-0">
+                  <input
+                    type="radio"
+                    class="form-check-input"
+                    id="medium"
+                    name="materialExampleRadios"
+                  />
+                  <label
+                    class="
+                      form-check-label
+                      small
+                      text-uppercase
+                      card-link-secondary
+                    "
+                    for="medium"
+                    >Medium</label
+                  >
+                </div>
+                <div class="form-check form-check-inline pl-0">
+                  <input
+                    type="radio"
+                    class="form-check-input"
+                    id="large"
+                    name="materialExampleRadios"
+                  />
+                  <label
+                    class="
+                      form-check-label
+                      small
+                      text-uppercase
+                      card-link-secondary
+                    "
+                    for="large"
+                    >Large</label
+                  >
+                </div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <button type="button" class="btn btn-primary btn-md mr-1 mb-2 dpb">
+      Buy now
+    </button>
+    <button type="button" class="btn  btn-primary btn-md mr-1 mb-2 ">
+      <i class="fas fa-shopping-cart"></i>Add to cart
+    </button>
+  </div>
+  </div>
+ </div>
+ 
+  <% } else { %>
+  <h1>No post found</h1>
+  <% } %>
+</div>
+
+<%- include('partials/footer') %>
